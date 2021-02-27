@@ -11,7 +11,7 @@ mins = int(datetime.datetime.now().strftime("%M"))
 print(day,hr,mins)
 
 #if No URL FOUND
-url="https://github.com/mr-php20"
+url="https://github.com/mr-php20/SREC-WEBEX-Auto-opener/blob/main/URL%20NOT%20FOUND"
 
 #Creating new driver with webex extension
 options = webdriver.ChromeOptions()
@@ -89,7 +89,7 @@ time.sleep(2)
 #Filling Details and Entering
 #As webex uses some specific frames find_element_by_xpath can't be done.
 #Input fields are identified by their positions.
-if url != 'https://github.com/mr-php20':
+if url != 'https://github.com/mr-php20/SREC-WEBEX-Auto-opener/blob/main/URL%20NOT%20FOUND':
     actions = ActionChains(browser)
     actions.move_to_element_with_offset(browser.find_element_by_xpath('/html'), 0,0)
     actions.move_by_offset(1070, 270).click()
